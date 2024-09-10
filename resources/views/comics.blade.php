@@ -27,3 +27,8 @@
         </div>
     </div>
 @endsection
+
+
+@section('titlePage')
+    comics
+@endsection
