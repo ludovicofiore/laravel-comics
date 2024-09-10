@@ -30,5 +30,7 @@ Route::get('/contatti', function () {
 
 // rotta per comics
 Route::get('/comics', function(){
-    return view('comics');
+
+    $comics_list= config('comics');
+    return view('comics', compact('comics_list'));
 })->name('comics');

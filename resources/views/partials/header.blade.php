@@ -7,10 +7,11 @@
 
         <ul>
             <li>
-                <a href="#">CHARACTERS</a>
+                <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{ route('home') }}">HOME</a>
             </li>
             <li>
-                <a href="{{ route('comics') }}">COMICS</a>
+                <a class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"
+                    href="{{ route('comics') }}">COMICS</a>
             </li>
             <li>
                 <a href="#">MOVIES</a>
