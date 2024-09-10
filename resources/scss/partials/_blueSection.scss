@@ -1,0 +1,32 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.blue-section {
+    width: 100%;
+    background-color: $dc-blue;
+
+    .container {
+        @include center(vertical);
+        padding: 50px 0;
+
+        .card {
+            @include center;
+            width: calc(100% / 5);
+
+            .image-container {
+                width: 50px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .card-text a {
+                color: white;
+                padding-left: 15px;
+                display: inline-block;
+            }
+        }
+    }
+
+}

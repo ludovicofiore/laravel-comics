@@ -20,6 +20,7 @@
 
     @yield('content')
 
+    @include('partials.blueSection')
     @include('partials.footer')
 
 </body>
