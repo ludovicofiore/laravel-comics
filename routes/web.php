@@ -26,3 +26,9 @@ Route::get('/chi-siamo', function () {
 Route::get('/contatti', function () {
     return view('contacts');
 })->name('contacts');
+
+
+// rotta per comics
+Route::get('/comics', function(){
+    return view('comics');
+})->name('comics');
