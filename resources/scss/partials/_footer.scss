@@ -1,0 +1,81 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.icon-bg {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    color: white;
+
+    .container {
+        @include center(horizontal);
+        justify-content: space-between;
+
+        .col-container {
+            display: flex;
+            gap: 30px;
+            padding: 50px 0;
+
+            .list {
+                margin-bottom: 20px;
+
+                h3 {
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    display: inline-block;
+                    color: rgb(122, 122, 122);
+                    padding: 3px 0;
+
+
+                }
+            }
+
+
+
+        }
+
+        .image-container {
+            width: 30%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+#final-section {
+    background-color: rgb(48, 48, 48);
+
+    .container {
+        @include center(horizontal);
+        justify-content: space-between;
+        padding: 50px 0;
+
+        .sign-button a {
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid $dc-blue;
+        }
+
+        .social {
+            @include center(horizontal);
+
+            span {
+                color: $dc-blue;
+                margin-right: 25px;
+                font-weight: bold;
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}
